@@ -32,6 +32,7 @@ function nextMove(square) {
             switchTurn();
         } else {
             setMessage("not this!");
+            turncounter--;
         }
     }
     if (document.winner === null && turncounter === 9) {
